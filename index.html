@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -74,9 +74,9 @@
                         your travel plans with our user-friendly online bus ticket buying website – your convenient
                         gateway to hassle-free journeys.</p>
                     <!-- Buy Tickets Button -->
-                    <button
-                        class="lg:py-5 lg:px-8 py-3 px-4 text-black font-bold text-xl bg-[rgb(29,209,0)] rounded-xl lg:my-8 my-3">Buy
-                        Tickets</button>
+                    <button id="buy-ticket-btn"
+                        class="lg:py-5 lg:px-8 py-3 px-4 text-black font-bold text-xl bg-[rgb(29,209,0)] rounded-xl lg:my-8 my-3"><a href="#seat-section">Buy
+                            Tickets</a></button>
                 </div>
                 <!-- States Container Start -->
                 <div class="lg:flex hidden gap-x-12 absolute bottom-0 translate-y-16">
@@ -164,7 +164,7 @@
         <!-- Best For You Section End -->
 
         <!-- Star Line Ticket Container Start -->
-        <section class="pt-32 rounded-[88px] border-[rgb(29,209,0)] border-t-4">
+        <section  id="seat-section" class="pt-32 rounded-[88px] border-[rgb(29,209,0)] border-t-4">
             <h3 class="lg:text-4xl text-2xl font-extrabold text-black text-center">Star Line Paribahan</h3>
             <p
                 class="max-w-[690px] mx-auto text-[rgba(3,7,18,0.6)] text-center text-sm lg:text-lg font-normal font-inter mb-12 mt-6">
@@ -378,7 +378,7 @@
                         <div>
                             <div class="flex justify-around gap-x-9'">
                                 <ul id="seat-name">
-                                    <li class="font-medium text-lg font-inter">Seat</li>
+                                    <li class="font-medium text-lg font-inter">Seat  <sup id="seat-count" class="bg-[rgb(29,209,0)] h-fit rounded-2xl text-lg text-white font-normal px-1">0</sup></li>
                                 </ul>
                                 <ul id="class">
                                     <li class="font-medium text-lg font-inter">Class</li>
@@ -389,13 +389,13 @@
                             </div>
                         </div>
                         <div class="flex justify-between px-5">
-                            <p class="font-medium text-lg font-inter">Total Price</p><p class="font-medium text-lg font-inter" > BDT<span id="total-price">1100</span></p>
+                            <p class="font-medium text-lg font-inter">Total Price</p><p class="font-medium text-lg font-inter" > BDT<span id="total-price">0</span></p>
                         </div>
                         <div class="h-[56px] w-full flex">
                             <input id="coupon-input" class="h-full w-full p-3 rounded-xl" placeholder="Have any copupon?" type="text"><button class="px-4 py-3 rounded-xl text-white font-medium bg-[rgb(29,209,0)] ">Apply</button>
                         </div>
                         <div class="flex justify-between px-5">
-                            <p class="font-medium text-lg font-inter">Grand Total</p><p class="font-medium text-lg font-inter" > BDT<span id="grand-total">1100</span></p>
+                            <p class="font-medium text-lg font-inter">Grand Total</p><p class="font-medium text-lg font-inter" > BDT<span id="grand-total">0</span></p>
                         </div>
                     </div>
                 </div>
@@ -406,8 +406,7 @@
     </main>
     <!-- Main Section End -->
 
-    <script src="js/utility.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/function.js"></script>
 </body>
 
 </html>

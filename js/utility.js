@@ -7,7 +7,7 @@ function setElementById(elementId, value) {
   li.innerText = value;
   element.appendChild(li);
 }
-function setBackgroundColor() {}
+
 
 function getElementById(elementId) {
   const element = document.getElementById(elementId);
@@ -15,10 +15,10 @@ function getElementById(elementId) {
   return elementInnerText;
 }
 
-const array = [];
 
 let totalSeat = 40;
 
+const array = [];
 
 for (let seat of seats) {
   seat.addEventListener("click", function () {
@@ -26,7 +26,7 @@ for (let seat of seats) {
     const seatName = seat.innerText;
 
 
-    if (array.includes(seatName) === false) {
+    if(array.includes(seatName) === false) {
       array.push(seatName);
         totalSeat = totalSeat - 1;
         
@@ -36,10 +36,13 @@ for (let seat of seats) {
             return;
         }
     }
+    else{
+      return;
+    }
     document.getElementById('seat-left').innerText = totalSeat
     setElementById("seat-name", seatName);
     setElementById("class", "Economoy");
     setElementById("seat-price", price);
-    seat.classList.add("bg-[rgb(29,209,0)]","transition-[500ms]");
+    seat.classList.add("bg-[rgb(29,209,0)]");
   });
 }
