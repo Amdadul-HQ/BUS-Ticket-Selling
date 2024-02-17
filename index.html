@@ -8,14 +8,216 @@
     <!-- Tailwind Css & Daisy Ui Link Start -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind Css & Daisy Ui Link Start -->
+    <!-- Tailwind Css & Daisy Ui Link End -->
 
-    <!--  -->
+    <!-- Google Font Link Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Google Font Link End -->
+
+    <!-- Font Class Css -->
+    <style>
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+    <!-- Font Class Css End -->
 
     <title>Star Line </title>
 </head>
 
-<body>
+<body class="font-raleway">
+    <!-- Home Page Start -->
+    <header class="lg:w-[80%] w-[100%] px-3 mx-auto max-w-7xl">
+        <!-- nav start -->
+        <nav class="flex justify-between my-12 items-center">
+            <div>
+                <h3 class="lg:text-4xl text-2xl font-extrabold">Star Line - Ticket</h3>
+            </div>
+            <div>
+                <ul class="lg:flex hidden text-lg font-medium cursor-pointer text-[rgba(3,7,18,0.7)] space-x-14">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Destination</li>
+                    <li>Search</li>
+                </ul>
+            </div>
+            <div>
+                <button
+                    class="flex text-2xl px-8 py-4 items-center gap-x-3 bg-[rgba(29,209,0,0.1)] rounded-xl border border-[rgb(29,209,0)] font-bold text-[rgb(29,209,0)]">Bus
+                    <img src="images/bus-icon.png" alt=""></button>
+            </div>
+        </nav>
+        <!-- nav End -->
+
+        <!-- Banner Section Start -->
+        <section>
+            <div
+                class="bg-[url('./images/banner.png')] p-5 relative lg:h-[600px] bg-no-repeat bg-cover bg-center rounded-2xl flex flex-col justify-center items-center">
+                <div class="text-center">
+                    <h1 class="lg:text-6xl text-2xl lg:leading-[84px] font-extrabold text-white">Teknaf-To-Tetulia
+                        Travel With <br>
+                        <span class="text-[rgb(29,209,0)]">Star Line Paribahan</span>
+                    </h1>
+                    <p class="max-w-[690px] mx-auto text-white text-sm lg:text-lg font-normal font-inter">Streamline
+                        your travel plans with our user-friendly online bus ticket buying website – your convenient
+                        gateway to hassle-free journeys.</p>
+                    <!-- Buy Tickets Button -->
+                    <button
+                        class="lg:py-5 lg:px-8 py-3 px-4 text-black font-bold text-xl bg-[rgb(29,209,0)] rounded-xl lg:my-8 my-3">Buy
+                        Tickets</button>
+                </div>
+                <!-- States Container Start -->
+                <div class="lg:flex hidden gap-x-12 absolute bottom-0 translate-y-16">
+                    <div
+                        class="flex border-b-[5px] border-[rgb(29,209,0)] items-center gap-x-6 py-8 px-6 bg-white rounded-3xl">
+                        <div>
+                            <img src="images/people.png" alt="">
+                        </div>
+                        <div class="font-inter">
+                            <h3 class="font-bold text-4xl text-[rgb(3,7,18)]">500K+</h3>
+                            <p class="text-[rgba(3,7,18,0.6)] font-normal text-lg">Registered users</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex border-b-[5px] border-[rgb(29,209,0)] items-center gap-x-6 py-8 px-6 bg-white rounded-3xl">
+                        <div>
+                            <img src="images/ticket-cupon.png" alt="">
+                        </div>
+                        <div class="font-inter">
+                            <h3 class="font-bold text-4xl text-[rgb(3,7,18)]">1.7 lacks</h3>
+                            <p class="text-[rgba(3,7,18,0.6)] font-normal text-lg">Tickets sold</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex border-b-[5px] border-[rgb(29,209,0)] items-center gap-x-6 py-8 px-6 bg-white rounded-3xl">
+                        <div>
+                            <img src="images/stoppage.png" alt="">
+                        </div>
+                        <div class="font-inter">
+                            <h3 class="font-bold text-4xl text-[rgb(3,7,18)]">80K+</h3>
+                            <p class="text-[rgba(3,7,18,0.6)] font-normal text-lg">Rental partners</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- States Container End -->
+            </div>
+        </section>
+        <!-- Banner Section End -->
+    </header>
+    <!-- Home Page End -->
+
+    <!-- Main Section Start -->
+    <main>
+        <!-- Best For You Section Start -->
+        <section class="lg:w-[80%] lg:px-0 px-3 mx-auto max-w-7xl lg:mt-40 mt-8 lg:mb-32">
+            <h3 class="lg:text-4xl text-2xl font-extrabold text-black text-center">Best offers for you</h3>
+            <!-- Coupon Container -->
+            <div class="lg:flex justify-around lg:space-y-0 space-y-5 mt-12">
+                <!-- 15% off coupon code -->
+                <div
+                    class="flex font-inter items-center justify-around lg:justify-between rounded-3xl bg-[rgb(255,191,15)]">
+                    <div class="lg:p-12 p-5">
+                        <h4 class="font-black text-2xl lg:text-4xl text-black">15% OFF</h4>
+                        <p class="font-semibold text-lg lg:text-xl">on your next purchase <br>
+                            <span class="text-lg font-medium text-[rgba(3,7,18,0.5)]">use by January 2024</span>
+                        </p>
+                    </div>
+                    <div class="font-raleway lg:p-12 text-center">
+                        <h5 class="font-bold text-3xl text-black">NEW15</h5>
+                        <p class="text-lg font-medium text-[rgba(3,7,18,0.5)]">Coupon Code</p>
+                    </div>
+                </div>
+
+                <!-- 20% off coupon code  -->
+                <div
+                    class="flex font-inter items-center justify-around lg:justify-between rounded-3xl bg-[rgb(247,140,156)]">
+                    <div class="lg:p-12 p-5">
+                        <h4 class="font-black text-2xl lg:text-4xl text-black">20% OFF</h4>
+                        <p class="font-semibold text-lg lg:text-xl">on your next purchase <br>
+                            <span class="text-lg font-medium text-[rgba(3,7,18,0.5)]">use by January 2024</span>
+                        </p>
+                    </div>
+                    <div class="font-raleway lg:p-12 text-center">
+                        <h5 class="font-bold text-xl lg:text-3xl text-black">Couple 20</h5>
+                        <p class="text-lg font-medium text-[rgba(3,7,18,0.5)]">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Coupon Container End -->
+            <div class="flex justify-center mt-16"><button
+                    class="px-8 py-5 font-bold text-xl text-[rgb(29,209,0)] rounded-xl border border-[rgb(29,209,0)]">See
+                    All Offers</button></div>
+
+        </section>
+        <!-- Best For You Section End -->
+
+        <!-- Star Line Ticket Container Start -->
+        <section class="pt-32 rounded-[88px] border-[rgb(29,209,0)] border-t-4">
+            <h3 class="lg:text-4xl text-2xl font-extrabold text-black text-center">Star Line Paribahan</h3>
+            <p
+                class="max-w-[690px] mx-auto text-[rgba(3,7,18,0.6)] text-center text-sm lg:text-lg font-normal font-inter mb-12 mt-6">
+                Streamline your travel plans with our user-friendly online bus ticket buying website – your convenient
+                gateway to hassle-free journeys.</p>
+
+            <div class="lg:w-[80%] p-8 mx-auto max-w-7xl lg:mt-40 mt-8 lg:mb-32">
+                <div class="flex">
+                    <div>
+                        <div class="flex justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div>
+                                    <img src="images/bus-logo.png" alt="">
+                                </div>
+                                <div class="space-y-3">
+                                    <h5 class="font-bold text-3xl text-[rgb(3,7,18)]">Star Line Pariibahan</h5>
+                                    <p class="text-[rgba(3,7,18,0.6)] font-normal text-lg">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4 bg-[rgba(29,209,0,0.15)] px-8 py-4 rounded-xl">
+                                <img src="images/seat-green.png" alt="">
+                                <!-- seat left container -->
+                                <p class="font-inter text-[rgb(29,209,0)] text-lg font-medium"><span
+                                        id="seat-left">40</span> Seats left</p>
+                            </div>
+                        </div>
+                        <div class="mt-6 bg-[rgb(247,248,248)] rounded-3xl p-8">
+                            <div class="flex justify-between">
+                                <p class="font-semibold text-lg text-[rgba(3,7,18,0.6)]">Route</p>
+                                <p class="font-semibold text-lg text-[rgb(3,7,18)]">Dhaka-Sylhet</p>
+                            </div>
+                            <hr class="border-dashed border-[2px] my-6">
+                            <div class="flex justify-between">
+                                <p class="font-semibold text-lg text-[rgba(3,7,18,0.6)]">Departure Time</p>
+                                <p class="font-semibold text-lg text-[rgb(3,7,18)]">9 : 00 PM</p>
+                            </div>
+                            <hr class="border-dashed border-[2px] my-6">
+                            <div class="font-inter flex gap-x-6">
+                                <p class="text-lg font-medium px-5 py-4 bg-[rgba(3,7,18,0.05)] rounded-xl">Boarding Point - Laxmipur</p>
+                                <p class="text-lg font-medium px-5 py-4 bg-[rgba(3,7,18,0.05)] rounded-xl">Dropping Point - Bogura</p>
+                                <p class="text-lg font-medium px-5 py-4 bg-[rgba(3,7,18,0.05)] rounded-xl">Est. Time - 11 Hour</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6 flex flex-col justify-center items-center">
+                        <img src="images/fare.png" alt="">
+                        <h3 class="lg:text-4xl text-2xl font-extrabold text-black ">550 Taka</h3>
+                        <p class="text-2xl font-semibold text-[rgba(3,7,18,0.6)]">Per Seat</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Star Line Ticket Container End -->
+    </main>
+    <!-- Main Section End -->
+
+
 
 </body>
 
