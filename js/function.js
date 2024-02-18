@@ -26,9 +26,16 @@ for (let seat of seats) {
       totalSeat = totalSeat - 1;
       count = count + 1;
       totalPrice = price + totalPrice;
+
+      const numberFied = document.getElementById("phone-number-input");
+      const number = numberFied.value;
+      if (array.length > 0 && number.length > 0) {
+        const nextButton = document.getElementById("next-btn");
+        nextButton.removeAttribute("disabled",true);
+      }
       input.addEventListener("keyup", function (e) {
         const keypress = e.target;
-        
+
         if (keypress) {
           const nextButton = document.getElementById("next-btn");
           nextButton.removeAttribute("disabled");
