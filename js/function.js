@@ -6,27 +6,7 @@ let totalSeat = 40;
 let count = 0;
 let totalPrice = 0;
 const price = 550;
-
-
-function setElementById(elementId, value) {
-  const element = document.getElementById(elementId);
-  const li = document.createElement("li");
-  li.setAttribute("class", "font-inter");
-  li.innerText = value;
-  element.appendChild(li);
-}
-
-function getElementById(elementId) {
-    const element = document.getElementById(elementId);
-    elementInnerNumber = parseInt(element.innerText);
-    return elementInnerNumber;
-}
-
-function setElementInnerTextById(elementId,value){
-    const element = document.getElementById(elementId);
-    element.innerText = value;
-}
-
+let grandTotal;
 
 for (let seat of seats) {
 
@@ -38,16 +18,24 @@ for (let seat of seats) {
       totalSeat = totalSeat - 1;
       count = count + 1;
       totalPrice = price + totalPrice;
+
       
       if (array.length > 4) {
           alert("You Buy Maximum Ticket");
-          return;
+        return;
         }
+      else if(array.length === 4){
+        const btn = document.getElementById('apply-btn');
+        btn.removeAttribute('disabled');
+      }
+
     }
     else{
         return;
     }
     
+
+    setElementInnerTextById('grand-total',totalPrice)
     setElementInnerTextById('total-price',totalPrice)
     setElementInnerTextById('seat-count',count)
     setElementInnerTextById('seat-left',totalSeat)
@@ -57,3 +45,31 @@ for (let seat of seats) {
     setElementById("seat-price", price);
   });
 }
+
+const discountContainer = document.getElementById('discount-container')
+
+document.getElementById('apply-btn').addEventListener('click',function(){
+    const inputField = document.getElementById('coupon-input');
+    const inputValue = inputField.value;
+    
+    discountContainer.classList.remove('hidden');
+    if(inputValue === 'NEW15'){
+     const totalPrice = getElementById('total-price');
+     const discount = totalPrice * 15 / 100;
+     const grandTotal = getElementById('grand-total');
+     const discountedPrice = grandTotal - discount;
+     setElementInnerTextById('discount-price',discount);
+     setElementInnerTextById('grand-total',discountedPrice)
+    }
+    else if(inputValue === 'Couple20'){
+      const totalPrice = getElementById('total-price');
+     const discount = totalPrice * 20 / 100;
+     const grandTotal = getElementById('grand-total');
+     const discountedPrice = grandTotal - discount;
+     setElementInnerTextById('discount-price',discount);
+     setElementInnerTextById('grand-total',discountedPrice)
+    }
+    // console.log(inputValue);
+    // if(inputValue === 'NEW15'){
+    // }
+})
