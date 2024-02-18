@@ -9,14 +9,6 @@ const price = 550;
 let grandTotal;
 const input = document.getElementById("phone-number-input");
 
-// input.addEventListener("keyup", function (e) {
-//   const keypress = e.target;
-//   if (keypress && array.length > 0) {
-//     const nextButton = document.getElementById("next-btn");
-//     nextButton.removeAttribute("disabled");
-//   }
-// });
-
 for (let seat of seats) {
   seat.addEventListener("click", function (event) {
     const seatName = event.target.innerText;
@@ -65,17 +57,6 @@ for (let seat of seats) {
   });
 }
 
-// console.log(document.getElementById("phone-number-input"));
-// const numberFied = document.getElementById("phone-number-input");
-// const number = numberFied.value;
-
-// const numberFied = document.getElementById("phone-number-input");
-// const number = numberFied.value;
-// console.log(number);
-// if (number >= 0) {
-//   const nextButton = document.getElementById("next-btn");
-//   nextButton.removeAttribute("disabled");
-// }
 
 const discountContainer = document.getElementById("discount-container");
 
